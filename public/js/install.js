@@ -5,7 +5,7 @@ let iList = document.querySelector(".iList")
 let inav = document.querySelector(".inav")
 let background = document.querySelector("#bg")
 let idiv = document.querySelector(".iList>li>div")
-
+let upload = document.querySelector("#bg>input")
 
 install.style.width = (window.innerWidth * 0.6) +"px"
 inav.style.width = (window.innerWidth * 0.6) +"px"
@@ -48,3 +48,25 @@ background.addEventListener("click", (e) => {
     e.stopPropagation()
 })
 
+//上传图片
+upload.addEventListener("change",(e)=>{
+    let file =e.currentTarget.files[0]
+    console.dir(file)
+    let form = new FormData()
+    form.append(file.name,file)
+    $.ajax({
+        type: "POST",
+        url: "/image",
+        data: form,
+        dataType: "json",
+        processData: false,
+        success: function (response) {
+            console.log(response);
+        }
+    })
+    // .done(data =>{
+    //     let img = $("<img></img>")
+    //     img.prop("src",) 
+    //     $("#bg").append(img)
+    // })
+})

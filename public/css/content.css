@@ -2,11 +2,16 @@
     position: relative;
     width: auto;
     height: 10000px;
+    overflow: hidden;
 }
 
 .conbody{
-    display: none;
     position: absolute;
+    display: flex;
+    justify-content: start;
     width: 70%;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,0);
     background-color: rgba(177, 177, 177,0.6);
 }
