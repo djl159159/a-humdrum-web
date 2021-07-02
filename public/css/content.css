@@ -1,0 +1,12 @@
+.content{
+    position: relative;
+    width: auto;
+    height: 10000px;
+}
+
+.conbody{
+    display: none;
+    position: absolute;
+    width: 70%;
+    background-color: rgba(177, 177, 177,0.6);
+}

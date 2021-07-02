@@ -1,0 +1,103 @@
+.install{
+    position: fixed;
+    height: 500px;
+    width: 800px;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(36, 35, 35,0.6);
+    border-radius: 20px;
+    color:white;
+    display: none;
+}
+
+
+.inav{
+    position: absolute;
+    height: 30px;
+    width: 800px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(36, 35, 35);
+}
+
+.inav span{
+    float: left;
+    line-height: 30px;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 14px;
+    width: 14px;
+    border-radius:7px;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+.inav p{
+    color: white;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+.isecdiv{
+    position: absolute;
+    width: 200px;
+    height: 470px;
+    top: 30px;
+    border-bottom-left-radius: 20px;
+    background-color: rgba(80, 77, 77,0.6);
+}
+
+
+.iList{
+    width: 200px;
+    height: 470px;
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column;
+}
+
+.iList>li{
+    text-align: center;
+    line-height: 60px;
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+}
+
+/* .iList>li:hover{
+    background-color: rgba(44, 43, 43, 0.6);
+} */
+
+
+.iList>li>div{
+    position: absolute;
+    width: 600px;
+    height: 470px;
+    top: 0px;
+    left: 200px;
+    border-bottom-right-radius: 20px;
+    display: none;
+}
+
+.iList>li>div>div{
+    display: flex;
+    width: 600px;
+    height: 470px;
+    justify-self: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
+
+.iList>li>div>div>img{
+    height: 80px;
+    width: 200px;
+    margin: 10px;
+    border: .1px;
+    cursor: pointer;
+}

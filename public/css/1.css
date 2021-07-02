@@ -1,0 +1,127 @@
+*{
+    margin : 0;
+    padding : 0
+}
+
+:root{
+    --height : 0px;
+    --width : 0px
+}
+
+.all{
+    z-index: -10;
+    position: fixed;
+    top: 0px;
+    background:url( "../img/home.jpeg") no-repeat;
+    background-size: 1440px 900px;
+    height: 1400px 900px;
+    /* position: fixed; */
+}
+
+nav{
+    position: fixed;
+    background: rgba(54, 53, 53, 0.6);
+    height : 40px;
+    z-index: 5;
+}
+
+.homebtn{
+    float: left;
+    font-size: 25px;
+    padding-left : 8px;
+    padding-top : 8px;
+    color : white;
+    cursor: pointer;
+}
+
+.homebtn:hover{
+    color: turquoise;
+}
+
+nav a{
+    text-decoration: none;
+    display: table-cell;
+    float: right;
+    margin-right: 10px;
+    /* margin-top: 10px; */
+    margin-top: 10px;
+    color: white;
+}
+
+nav a:first-of-type{
+    margin-right: 20px;
+}
+
+a:hover{
+    color: turquoise;
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content div{
+    width: 900px;
+    background: rgba(255, 255, 255, 0.6);
+    height: 10000px;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?cr1rmn');
+    src:  url('./fonts/icomoon.eot?cr1rmn#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?cr1rmn') format('truetype'),
+      url('../fonts/icomoon.woff?cr1rmn') format('woff'),
+      url('../fonts/icomoon.svg?cr1rmn#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-home:before {
+    content: "\e900";
+  }
+  .icon-home2:before {
+    content: "\e901";
+  }
+  .icon-home3:before {
+    content: "\e902";
+  }
+  .icon-floppy-disk:before {
+    content: "\e962";
+  }
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-users:before {
+    content: "\e972";
+  }
+  .icon-user-tie:before {
+    content: "\e976";
+  }
+  .icon-heart:before {
+    content: "\e9da";
+  }
